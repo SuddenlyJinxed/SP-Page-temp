@@ -64,22 +64,22 @@ const ContactSection = () => {
       icon: <Mail size={24} />,
       title: "Email",
       description: "For inquiries about speaking engagements",
-      contact: "speaking@alexandra.com",
-      link: "mailto:speaking@alexandra.com"
+      contact: "sandra.paovic@gmail.com",
+      link: "mailto:sandra.paovic@gmail.com"
     },
     {
       icon: <Phone size={24} />,
       title: "Phone",
       description: "For media and press",
-      contact: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      contact: "+385 098 1817 649",
+      link: "tel:+385098181764"
     },
     {
       icon: <MessageSquare size={24} />,
       title: "Book Inquiries",
       description: "For bulk orders and signings",
-      contact: "book@alexandra.com",
-      link: "mailto:book@alexandra.com"
+      contact: "sandra.paovic@gmail.com",
+      link: "mailto:sandra.paovic@gmail.com?subject=Book%20Inquiry"
     }
   ];
 
@@ -96,7 +96,7 @@ const ContactSection = () => {
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto reveal-on-scroll [animation-delay:300ms]">
-            Interested in having Alexandra speak at your event, ordering books in bulk, or media opportunities? Reach out using the form below or through our direct contact methods.
+            Interested in having Sandra speak at your event, ordering books in bulk, or media opportunities? Reach out using the form below or through our direct contact methods.
           </p>
         </div>
         

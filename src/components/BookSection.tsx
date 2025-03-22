@@ -31,8 +31,6 @@ const BookSection = () => {
     };
   }, []);
 
-  const bookCoverUrl = "https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=687&auto=format&fit=crop";
-
   return (
     <section id="book" className="py-24 md:py-32 bg-white" ref={sectionRef}>
       <div className="container">
@@ -44,7 +42,7 @@ const BookSection = () => {
               </span>
               
               <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight mb-6 reveal-on-scroll [animation-delay:200ms]">
-                Resilience: From Champion to Champion Again
+                Volim život - I Love Life
               </h2>
               
               <div className="flex items-center mb-6 reveal-on-scroll [animation-delay:300ms]">
@@ -53,7 +51,7 @@ const BookSection = () => {
                     <Star key={star} size={16} className="text-yellow-500 fill-yellow-500" />
                   ))}
                 </div>
-                <span className="ml-2 text-sm text-muted-foreground">97 reviews</span>
+                <span className="ml-2 text-sm text-muted-foreground">94 reviews</span>
               </div>
               
               <p className="text-muted-foreground mb-6 reveal-on-scroll [animation-delay:400ms]">
@@ -93,8 +91,8 @@ const BookSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-yellow-100 to-white rounded-xl rotate-3 transform"></div>
               <img 
-                src={bookCoverUrl} 
-                alt="Resilience Book Cover" 
+                src="/public/lovable-uploads/109aa9af-a1aa-44e6-aab8-787bb2b75d3d.png" 
+                alt="Volim život Book Cover" 
                 className="relative rounded-lg shadow-2xl w-full max-w-md mx-auto transform transition-transform duration-500 hover:scale-[1.02] hover:shadow-xl"
               />
               

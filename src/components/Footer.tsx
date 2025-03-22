@@ -14,10 +14,10 @@ const Footer = () => {
               href="#home" 
               className="font-display font-bold text-xl tracking-tight opacity-90 hover:opacity-100 transition-opacity"
             >
-              ALEXANDRA
+              SANDRA PAOVIĆ
             </a>
             <p className="text-sm text-muted-foreground mt-2 max-w-md">
-              Olympic gold medalist, bestselling author, and motivational speaker sharing the mindset of champions.
+              Paralympic gold medalist, bestselling author, and motivational speaker sharing her inspiring journey of resilience and determination.
             </p>
           </div>
           
@@ -55,7 +55,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            &copy; {year} Alexandra Coleman. All rights reserved.
+            &copy; {year} Sandra Paović. All rights reserved.
           </p>
           
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
