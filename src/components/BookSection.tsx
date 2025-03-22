@@ -91,7 +91,7 @@ const BookSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-yellow-100 to-white rounded-xl rotate-3 transform"></div>
               <img 
-                src="/public/lovable-uploads/109aa9af-a1aa-44e6-aab8-787bb2b75d3d.png" 
+                src="/lovable-uploads/109aa9af-a1aa-44e6-aab8-787bb2b75d3d.png" 
                 alt="Volim život Book Cover" 
                 className="relative rounded-lg shadow-2xl w-full max-w-md mx-auto transform transition-transform duration-500 hover:scale-[1.02] hover:shadow-xl"
               />

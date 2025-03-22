@@ -45,7 +45,7 @@ const AboutSection = () => {
             <div className="relative h-full">
               <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-yellow-200 rounded-lg"></div>
               <img 
-                src="/public/lovable-uploads/0292ef4c-6484-4801-9a73-921521356fef.png" 
+                src="/lovable-uploads/0292ef4c-6484-4801-9a73-921521356fef.png" 
                 alt="Sandra Paović with gold medal" 
                 className="relative z-10 rounded-lg object-cover h-full w-full max-h-[600px] reveal-on-scroll"
               />
