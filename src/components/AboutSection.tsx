@@ -31,10 +31,10 @@ const AboutSection = () => {
   }, []);
 
   const stats = [
-    { id: 1, icon: <Trophy size={24} />, value: "4", label: "Olympic Medals" },
-    { id: 2, icon: <Award size={24} />, value: "12", label: "World Championships" },
-    { id: 3, icon: <Clock size={24} />, value: "15+", label: "Years of Experience" },
-    { id: 4, icon: <Users size={24} />, value: "250K+", label: "Lives Impacted" },
+    { id: 1, icon: <Trophy size={24} />, value: "1", label: "Paralympic Gold" },
+    { id: 2, icon: <Award size={24} />, value: "9", label: "Table Tennis Championships" },
+    { id: 3, icon: <Clock size={24} />, value: "20+", label: "Years in Table Tennis" },
+    { id: 4, icon: <Users size={24} />, value: "100K+", label: "Lives Inspired" },
   ];
 
   return (
@@ -43,21 +43,21 @@ const AboutSection = () => {
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="w-full lg:w-1/2">
             <div className="relative h-full">
-              <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-muted rounded-lg"></div>
+              <div className="absolute top-4 left-4 right-4 bottom-4 border-2 border-yellow-200 rounded-lg"></div>
               <img 
                 src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=687&auto=format&fit=crop" 
-                alt="Alexandra Coleman" 
+                alt="Sandra Paović" 
                 className="relative z-10 rounded-lg object-cover h-full w-full max-h-[600px] reveal-on-scroll"
               />
               
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 z-20 reveal-on-scroll [animation-delay:400ms]">
+              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 z-20 reveal-on-scroll [animation-delay:400ms] border border-yellow-100">
                 <div className="grid grid-cols-2 gap-4">
                   {stats.slice(0, 2).map((stat) => (
                     <div key={stat.id} className="text-center">
-                      <div className="flex justify-center text-primary mb-1">
+                      <div className="flex justify-center text-yellow-600 mb-1">
                         {stat.icon}
                       </div>
-                      <div className="text-2xl font-bold">{stat.value}</div>
+                      <div className="text-2xl font-bold text-yellow-900">{stat.value}</div>
                       <div className="text-xs text-muted-foreground">{stat.label}</div>
                     </div>
                   ))}
@@ -67,34 +67,34 @@ const AboutSection = () => {
           </div>
           
           <div className="w-full lg:w-1/2">
-            <span className="inline-block px-3 py-1 rounded-full bg-secondary text-xs font-medium uppercase tracking-wider mb-6 reveal-on-scroll">
-              About Alexandra
+            <span className="inline-block px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-xs font-medium uppercase tracking-wider mb-6 reveal-on-scroll">
+              About Sandra
             </span>
             
             <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight mb-6 reveal-on-scroll [animation-delay:200ms]">
-              From Olympic Champion to Inspirational Speaker
+              From Table Tennis Champion to Paralympic Gold Medalist
             </h2>
             
             <div className="space-y-4 mb-8 reveal-on-scroll [animation-delay:300ms]">
               <p className="text-muted-foreground">
-                Alexandra Coleman is an Olympic gold medalist, world champion, and one of the most decorated athletes in her sport. Throughout her 15-year career, she has broken multiple world records and redefined what's possible in competitive athletics.
+                Sandra Paović is a Croatian table tennis player and Paralympic champion. Before her accident in 2009, she was a highly successful table tennis player, competing at the highest levels and winning multiple championships throughout her career.
               </p>
               
               <p className="text-muted-foreground">
-                After overcoming a career-threatening injury to make an incredible comeback at the Olympics, Alexandra discovered her passion for helping others develop the mental resilience needed to overcome their own challenges.
+                Following a near-fatal bus accident that left her with serious spinal injuries, doctors told Sandra she might never walk again. Despite the devastating prognosis, she channeled her competitive spirit into rehabilitation and eventually returned to table tennis as a Paralympic athlete.
               </p>
               
               <p className="text-muted-foreground">
-                Today, she combines her elite athletic experience with extensive research on peak performance to deliver transformative keynotes and workshops. Her recently published book, "Champion Mindset," has become a bestseller, praised for its practical approach to building resilience and achieving excellence.
+                Her journey reached its pinnacle when she won the gold medal at the 2016 Rio Paralympic Games, completing one of the most remarkable comebacks in sports history. Today, Sandra combines her unique perspective as both an able-bodied champion and Paralympic gold medalist to deliver powerful talks on resilience, adaptation, and finding strength in adversity.
               </p>
             </div>
             
             <div className="grid grid-cols-2 gap-6 reveal-on-scroll [animation-delay:400ms]">
               {stats.slice(2, 4).map((stat) => (
-                <div key={stat.id} className="bg-gray-50 rounded-lg p-5">
-                  <div className="flex items-center text-primary mb-3">
+                <div key={stat.id} className="bg-yellow-50 rounded-lg p-5 border border-yellow-100">
+                  <div className="flex items-center text-yellow-600 mb-3">
                     {stat.icon}
-                    <span className="text-2xl font-bold ml-2">{stat.value}</span>
+                    <span className="text-2xl font-bold ml-2 text-yellow-900">{stat.value}</span>
                   </div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>

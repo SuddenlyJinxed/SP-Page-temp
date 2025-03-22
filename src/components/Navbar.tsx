@@ -46,16 +46,16 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
+          ? "bg-white/80 backdrop-blur-md shadow-sm border-b border-yellow-100" 
           : "bg-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
         <a 
           href="#home" 
-          className="font-display font-bold text-xl tracking-tight opacity-90 hover:opacity-100 transition-opacity"
+          className="font-display font-bold text-xl tracking-tight text-yellow-900 hover:text-yellow-800 transition-colors"
         >
-          ALEXANDRA
+          SANDRA PAOVIĆ
         </a>
         
         {!isMobile ? (
@@ -73,7 +73,7 @@ const Navbar = () => {
         ) : (
           <button 
             onClick={handleMobileMenuToggle} 
-            className="p-1.5 rounded-md text-primary focus:outline-none"
+            className="p-1.5 rounded-md text-yellow-800 focus:outline-none"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -94,7 +94,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-2xl font-medium py-2 border-b border-muted"
+                className="text-2xl font-medium py-2 border-b border-yellow-100 text-yellow-900"
                 onClick={closeMobileMenu}
               >
                 {link.name}

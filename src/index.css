@@ -8,73 +8,73 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 38 60% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 38 60% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 38 60% 10%;
 
-    --primary: 240 6% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 40 100% 50%;
+    --primary-foreground: 38 60% 10%;
 
-    --secondary: 240 5% 96%;
-    --secondary-foreground: 240 6% 10%;
+    --secondary: 40 80% 96%;
+    --secondary-foreground: 38 60% 10%;
 
-    --muted: 240 5% 96%;
-    --muted-foreground: 240 4% 46.9%;
+    --muted: 40 20% 96%;
+    --muted-foreground: 38 30% 40%;
 
-    --accent: 240 5% 96%;
-    --accent-foreground: 240 6% 10%;
+    --accent: 40 70% 96%;
+    --accent-foreground: 38 60% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 6% 90%;
-    --input: 240 6% 90%;
-    --ring: 240 6% 10%;
+    --border: 38 30% 90%;
+    --input: 38 30% 90%;
+    --ring: 38 60% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 40 30% 98%;
+    --sidebar-foreground: 38 30% 30%;
+    --sidebar-primary: 40 100% 50%;
+    --sidebar-primary-foreground: 38 60% 10%;
+    --sidebar-accent: 40 30% 96%;
+    --sidebar-accent-foreground: 38 60% 10%;
+    --sidebar-border: 40 30% 91%;
+    --sidebar-ring: 40 80% 60%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 38 30% 5%;
+    --foreground: 40 30% 98%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 38 30% 5%;
+    --card-foreground: 40 30% 98%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 38 30% 5%;
+    --popover-foreground: 40 30% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 6% 10%;
+    --primary: 40 100% 50%;
+    --primary-foreground: 38 10% 10%;
 
-    --secondary: 240 4% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 38 30% 12%;
+    --secondary-foreground: 40 30% 98%;
 
-    --muted: 240 4% 12%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 38 30% 12%;
+    --muted-foreground: 38 30% 65%;
 
-    --accent: 240 4% 12%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 38 30% 12%;
+    --accent-foreground: 40 30% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 240 5% 65%;
+    --border: 38 30% 16%;
+    --input: 38 30% 16%;
+    --ring: 40 100% 50%;
   }
 }
 
@@ -106,7 +106,7 @@
   }
 
   .hover-link {
-    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-primary after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300;
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-yellow-500 after:origin-bottom-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300;
   }
 
   .glass-card {
@@ -123,6 +123,6 @@
 
   .nav-link.active::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full;
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-yellow-500 rounded-full;
   }
 }

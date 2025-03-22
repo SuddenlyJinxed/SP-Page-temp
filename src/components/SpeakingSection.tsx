@@ -34,21 +34,21 @@ const SpeakingSection = () => {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Breaking Barriers: The Path to Excellence",
+      title: "Overcoming Adversity: The Champion's Mindset",
       date: "June 15, 2023",
-      location: "TED Global Conference, New York",
+      location: "Paralympic Sports Summit, Paris",
       imageUrl: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1470&auto=format&fit=crop"
     },
     {
       id: 2,
-      title: "The Champion's Mindset Workshop",
+      title: "From Tragedy to Triumph Workshop",
       date: "July 8, 2023",
-      location: "Fortune 500 Leadership Summit, San Francisco",
+      location: "International Table Tennis Federation Conference, Zagreb",
       imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1470&auto=format&fit=crop"
     },
     {
       id: 3,
-      title: "Resilience in the Face of Adversity",
+      title: "Redefining Success After Adversity",
       date: "August 22, 2023",
       location: "Women in Sports Conference, London",
       imageUrl: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1470&auto=format&fit=crop"
@@ -56,19 +56,19 @@ const SpeakingSection = () => {
   ];
 
   return (
-    <section id="speaking" className="py-24 md:py-32 bg-gray-50" ref={sectionRef}>
+    <section id="speaking" className="py-24 md:py-32 bg-yellow-50" ref={sectionRef}>
       <div className="container">
         <div className="max-w-3xl mx-auto mb-16 text-center">
-          <span className="inline-block px-3 py-1 rounded-full bg-secondary text-xs font-medium uppercase tracking-wider mb-6 reveal-on-scroll">
+          <span className="inline-block px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-xs font-medium uppercase tracking-wider mb-6 reveal-on-scroll">
             Inspirational Talks
           </span>
           
           <h2 className="text-3xl md:text-4xl font-display font-bold tracking-tight mb-6 reveal-on-scroll [animation-delay:200ms]">
-            Bringing the Champion Mindset to Your Organization
+            Finding Strength Through Adversity
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto reveal-on-scroll [animation-delay:300ms]">
-            Alexandra delivers powerful keynotes and workshops that inspire teams to reach their highest potential. Drawing from her Olympic experience, she shares practical techniques for building resilience, focus, and excellence.
+            Sandra delivers powerful keynotes and workshops that inspire audiences to embrace resilience and find their inner strength. Drawing from her journey from table tennis champion to Paralympic gold medalist after a life-altering accident, she shares practical insights on overcoming obstacles and achieving greatness.
           </p>
         </div>
         
@@ -76,7 +76,7 @@ const SpeakingSection = () => {
           {upcomingEvents.map((event, index) => (
             <div 
               key={event.id}
-              className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 reveal-on-scroll"
+              className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 reveal-on-scroll border border-yellow-100"
               style={{ animationDelay: `${400 + index * 100}ms` }}
             >
               <div className="relative h-48 overflow-hidden">
@@ -89,13 +89,13 @@ const SpeakingSection = () => {
               
               <div className="p-6">
                 <div className="flex items-center text-sm text-muted-foreground mb-3">
-                  <Calendar size={14} className="mr-1" />
+                  <Calendar size={14} className="mr-1 text-yellow-600" />
                   <span className="mr-4">{event.date}</span>
-                  <MapPin size={14} className="mr-1" />
+                  <MapPin size={14} className="mr-1 text-yellow-600" />
                   <span>{event.location.split(',')[1]}</span>
                 </div>
                 
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-yellow-700 transition-colors duration-300">
                   {event.title}
                 </h3>
                 
@@ -105,7 +105,7 @@ const SpeakingSection = () => {
                 
                 <a 
                   href="#" 
-                  className="inline-flex items-center text-sm font-medium hover-link"
+                  className="inline-flex items-center text-sm font-medium text-yellow-700 hover-link"
                 >
                   Learn more
                   <ArrowRight size={14} className="ml-1" />
@@ -122,9 +122,9 @@ const SpeakingSection = () => {
           
           <Button 
             size="lg" 
-            className="rounded-full px-8 py-6 font-medium shadow-sm hover:shadow-md transition-all duration-300"
+            className="rounded-full px-8 py-6 font-medium shadow-sm hover:shadow-md transition-all duration-300 bg-yellow-500 hover:bg-yellow-600 text-yellow-950"
           >
-            Book Alexandra for Your Event
+            Book Sandra for Your Event
           </Button>
         </div>
       </div>
