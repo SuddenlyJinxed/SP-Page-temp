@@ -97,7 +97,7 @@ const BookSection = () => {
               />
               
               <div className="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur rounded-full px-4 py-2 shadow-md border border-yellow-200">
-                <span className="text-lg font-bold text-yellow-900">$24.99</span>
+                <span className="text-lg font-bold text-yellow-900">20€</span>
               </div>
             </div>
           </div>
